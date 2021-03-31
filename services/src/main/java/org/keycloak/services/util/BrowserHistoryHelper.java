@@ -126,7 +126,7 @@ public abstract class BrowserHistoryHelper {
         }
 
         private String getJavascriptText(String lastExecutionUrl) {
-            return new StringBuilder("<SCRIPT>")
+            return new StringBuilder("<SCRIPT nonce=\"1e31b6130c5be9ef4cbab7eb38df5495\">")
                     .append(" if (typeof history.replaceState === 'function') {")
                     .append("  history.replaceState({}, \"some title\", \"" + lastExecutionUrl + "\");")
                     .append(" }")
